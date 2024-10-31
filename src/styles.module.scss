@@ -1,0 +1,80 @@
+.div {
+    ul {
+        padding: 20px;
+        margin: 0;
+        overflow: hidden; 
+    }
+
+    li {
+        text-align: center; 
+        list-style: none;
+        background-color: gray;
+        padding: 5px;
+        border-radius: 30px;
+        margin: 5px;
+        width: 500px;
+        height: 40px;
+        display: block;
+
+        span {
+            padding-right: 20px;
+            white-space: nowrap; 
+            overflow: hidden; 
+            text-overflow: ellipsis;
+        }
+        
+    }
+
+    button {
+        padding: 8px;
+        border-radius: 20px;
+        border: 0px;
+        width: 90px;
+        cursor: pointer; 
+        box-shadow: black 1px 1px 3px;
+
+        &:hover {
+            background-color: darkgray; 
+            transition: background-color 0.3s; 
+        }
+    }
+
+    li:last-child {
+        animation: fadeIn 0.5s forwards;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+
+.scrollButton {
+    position: fixed;
+    top: 20px; 
+    right: 20px;
+    padding: 10px 15px;
+    background-color: rgb(1, 139, 184);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; 
+
+    &:hover {
+        background-color: rgb(136, 136, 136); 
+        transition: background-color 0.3s;
+    }
+}
+
+input {
+    border-radius: 20px;
+    padding: 6px;
+}
